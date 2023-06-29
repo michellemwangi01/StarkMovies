@@ -2,6 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 
+body {
+  /* solid background */
+  background: rgb(0,212,255);
+  
+  /* gradient background*/
+  background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(11,3,45,1) 100%);    
+  
+  /* photo background */
+  background-image: url(https://images.unsplash.com/photo-1619204715997-1367fe5812f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1889&q=80);
+  background-size: cover;
+  background-position: center;  
+  
+  /* display: flex;
+  align-items: center;
+  justify-content: center;    
+  height: 100vh;   */
+}
+
 .container {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -30,7 +48,6 @@
 .banner-image {
   background-image: url();
   background-position: center;
-  
   width: 100%;
   object-fit: contain;
   height: 300px;
@@ -87,14 +104,13 @@ p {
   color: rgba(0, 212, 255, 0.9);
   border: 1px solid rgba(0, 212, 255, 0.6); 
   transition: all .3s ease;
-  
 }
 
 .outline:hover{
   transform: scale(1.125);
   color: rgba(255, 255, 255, 0.9);
   border-color: rgba(255, 255, 255, 0.9);
-  transition: all .3s ease;  
+  transition: all .3s ease;
 }
 
 .fill {

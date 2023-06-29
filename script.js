@@ -35,3 +35,5 @@ function fetchFilmData(){
 
   }
 
+//   ${film.poster}
+

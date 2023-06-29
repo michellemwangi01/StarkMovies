@@ -21,8 +21,6 @@ body{
     
 }
 nav{
-    
-    
     width: 85%;
     margin: auto;
     display: flex;
@@ -102,8 +100,6 @@ em{
 #movieTitleDiv{
     position:absolute;
     bottom: 10px;
-   
-
 }
 #movieTitle{
 
