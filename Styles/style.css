@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&family=IBM+Plex+Serif:wght@300&family=Kalam:wght@300&family=Satisfy&family=Ysabeau+Infant:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    
+}
+/* ******************NAV CSS****************** */
+#logo h1{
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: white;
+    /* color: rgb(131, 19, 19); */
+}
+#navContainer{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), #772314), url("../Images/ironMan.jpg");
+    background-repeat: no-repeat;
+    background-position: 80%;
+    
+}
+nav{
+    
+    
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    align-items: center;
+    background-repeat: no-repeat;
+
+
+}
+em{
+    font-style: normal;
+    color: white; 
+}
+#movieSearch{
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+}
+#navItems ul{
+    display: flex;
+
+}
+#navItems ul li{
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 4.5px;
+    margin: auto 4.5px;
+    font-weight: bold;
+    
+    
+}
+#movieSearch{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+
+/* ******************* BODY CSS ************************ */
+#bodyTitle{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding: 1rem;
+}
+#bodyDiv{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1.5rem auto;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+#movieMenuDiv{
+    display: flex;
+    margin-top: 1rem;
+    
+
+}
+#movieCardDiv{
+    position: relative ;
+    border: 1px whitesmoke solid ;
+    margin: 8px;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 450px;
+    overflow: hidden;
+
+}
+#movieTitleDiv{
+    position:absolute;
+    bottom: 10px;
+   
+
+}
+#movieTitle{
+
+    left: 20%;
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Serif', serif;
+    margin: 5px;
+
+}
+#imgDiv img{
+    width: 90%;
+    object-fit: contain;
+    text-align: center;
+    max-height: 80%;
+}
+#imgDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
