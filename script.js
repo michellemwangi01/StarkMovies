@@ -6,12 +6,17 @@
   const remainingTickets = document.getElementById('remainingTickets')
   const movieTitlesContainer = document.getElementById('movieTitlesContainer')
   const movieTitlesCard = document.createElement('div')
+  const buyNowBtn = document.getElementById('buyNowBtn')
 
 
   document.addEventListener('DOMContentLoaded',()=>{
+    fetchFilmData()
+    buyNowBtn.addEventListener('click',()=>{
+
+    })
     
   })
-fetchFilmData()
+
 
     function fetchFilmData() {
       fetch("http://localhost:3000/films")
@@ -77,25 +82,24 @@ function createMoviePreviewCard(film){
 
     let movieDetailsCard = document.getElementById(`cardTitles-${film.id}`)
     movieDetailsCard.addEventListener('click', ()=>{
-
-      //scrollIntoView: used to scroll to a particular section of a page. MovieImage is the section that we would like to scroll TO
-      movieImage.scrollIntoView({
-
-        behavior: 'smooth'
-      })
-      
        console.log(film.title);
+       let filmID = film.id
        movieTitleDetails.textContent = film.title;
           movieImage.src = film.poster;
           movieDescription.textContent = film.description;
           movierunTime.textContent = `RunTime: ${film.runtime} minutes`;
           movieShowTime.textContent = `Showtime: ${film.showtime}`;
-          remainingTickets.textContent = `Remaining Tickets: ${
-            film.capacity - film.tickets_sold
-          }`;
+          let remainingTicketsNum = film.capacity - film.tickets_sold
+          remainingTickets.textContent = `Remaining Tickets: ${remainingTicketsNum}`;
+    //scrollIntoView: used to scroll to a particular section of a page. MovieImage is the section that we would like to scroll TO
+    movieImage.scrollIntoView({behavior: 'smooth'})
+
+    buyNowBtn.addEventListener('click',()=>{
+     if(remainingTicketsNum == 0){
+      alert("Sorry, this viewing is fully booked!")
+     }
+    })
 })
-
-
 }
 
 

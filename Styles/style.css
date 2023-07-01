@@ -98,11 +98,38 @@ em{
 }
 /* ******************* BODY CSS ************************ */
 a{
+    text-decoration: none;
     color: orangered;
+    padding: 5px;
+    
 }
+.navlink{
+    position: relative;
+  }
+.navlink:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: orangered;
+  transition: width .4s ease;
+  -webkit-transition: width .4s ease;
+}
+ 
+.navlink:hover:after{
+    width: 100%;
+    left: 0;
+    background: orangered;
+  }
+
 .movieDeets{
     font-size: 1rem;
 
+}
+#movieTitleDetails{
+    font-size: 1.9rem;
 }
 #movieMenu{
     text-align: center;
@@ -171,9 +198,12 @@ a{
 
 /* ******************* BODY CSS ************************ */
 #bodyTitle{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     padding: 1rem;
+    color: whitesmoke;
+    font-weight: bold;
+
 }
 #bodyDiv{
     display: grid;
