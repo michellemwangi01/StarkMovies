@@ -9,14 +9,18 @@
 
 
   document.addEventListener('DOMContentLoaded',()=>{
-    fetchFilmData()
+    
   })
-
+fetchFilmData()
 
     function fetchFilmData() {
       fetch("http://localhost:3000/films")
         .then((res) => res.json())
         .then((films) => {
+          films.forEach(createMoviePreviewCard) //create preview Card for each movie
+
+          
+          //randomize appearance of movie detail cards
           let movieKeys = Object.keys(films);
           let numberOfMovies = movieKeys.length;
           let filmChoiceNum = Math.floor(Math.random() * numberOfMovies);
@@ -29,10 +33,8 @@
           remainingTickets.textContent = `Remaining Tickets: ${
             filmChoice.capacity - filmChoice.tickets_sold
           }`;
-          console.log(films);
-            for(let film of films){
-              createMoviePreviewCard(film)
-            }
+          
+
         
         });
     }
@@ -55,41 +57,67 @@
      <button class="btn outline">DETAILS </button> 
      <!--   <button class="btn fill">BUY NOW</button>-->
    </div>`
-
-  
-
-
   }
 
 function createMoviePreviewCard(film){
-
-  movieTitlesContainer.append(movieTitlesCard)
-  movieTitlesCard.innerHTML = `
-    <div id="cardTitles">
+  const moviePreviewCard = document.createElement('div');
+  movieTitlesContainer.append(moviePreviewCard)
+  moviePreviewCard.innerHTML = `
+    <div class="cardTitles" id="cardTitles-${film.id}">
         <div class="imgPoster" id="imgPoster">
             <img src="${film.poster}" alt="">
         </div>
         <div>
             <h3 id="movieTitle">${film.title}</h3>
         </div>
-        <div id="detailsBtnDiv">
-          <button id="movieDetails-${film.id}">Details</button>
-        </div>
+        <!-- <div id="detailsBtnDiv">
+          <button class="movieDetails" id="movieDetails-${film.id}">View Details</button>
+        </div> -->
   </div>`
 
-    let movieDetailsBtn = document.getElementById(`movieDetails-${film.id}`)
-    movieDetailsBtn.addEventListener('click', ()=>{
+    let movieDetailsCard = document.getElementById(`cardTitles-${film.id}`)
+    movieDetailsCard.addEventListener('click', ()=>{
+
+      //scrollIntoView: used to scroll to a particular section of a page. MovieImage is the section that we would like to scroll TO
+      movieImage.scrollIntoView({
+
+        behavior: 'smooth'
+      })
       
        console.log(film.title);
-       movieTitleDetails.textContent = film.title
-       movieImage.src = film.poster
-       movieDescription.textContent = film.description
-       movierunTime.textContent = film.movierunTime
-       movieShowTime.textContent = film.showtime
-       remainingTickets.textContent = film.capacity - film.tickets_sold
+       movieTitleDetails.textContent = film.title;
+          movieImage.src = film.poster;
+          movieDescription.textContent = film.description;
+          movierunTime.textContent = `RunTime: ${film.runtime} minutes`;
+          movieShowTime.textContent = `Showtime: ${film.showtime}`;
+          remainingTickets.textContent = `Remaining Tickets: ${
+            film.capacity - film.tickets_sold
+          }`;
 })
 
 
 }
 
 
+  var imgSlider = document.getElementById('imgSlider');
+  var slides=['iron-man-3-small.jpg','iron-man-3.jpg', 'ironMan.jpg','M3gan.jpg', 'miss-sloane.jpg'];
+function imgSlider(){
+  
+ // var Start=0;
+
+  for (let i = 0; i< slides.length; i++){
+    imgSlider.src =  "./Images/" + slides[i];
+    console.log(imgSlider);
+
+  }
+
+      // if(Start<slides.length){
+      //     Start=Start+1;
+      // }
+      // else{
+      //     Start=1;
+      // }
+      // console.log(imgSlider);
+      // imgSlider.src =  "./Images/" + slides[Start - 1];
+}
+// setInterval(imgSlider,5000);

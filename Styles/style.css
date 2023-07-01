@@ -3,8 +3,7 @@
 body{
     background-color: black;
     color: white;
-    margin: 0;
-    
+    margin: 0; 
 }
 /* ******************NAV CSS****************** */
 #landingandNav{
@@ -12,7 +11,7 @@ body{
     flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/miss-sloane.jpg");
     /* #772314 */
-    height: 100vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-position: 50% 10%;
     min-height: 100%;
@@ -72,7 +71,7 @@ nav{
 }
 em{
     font-style: normal;
-    color: white; 
+    color: orangered; 
 }
 #movieSearch{
     padding: 10px;
@@ -98,62 +97,66 @@ em{
     font-size: 1.1rem;
 }
 /* ******************* BODY CSS ************************ */
+a{
+    color: orangered;
+}
+.movieDeets{
+    font-size: 1rem;
+
+}
+#movieMenu{
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    font-family: 'IBM Plex Serif', serif;
+}
 #movieTitlesContainer{
     display: flex;
-    width: 100%;
+    width: 85%;
     margin:  0 auto;
     padding: 2rem 0.2rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-
-    
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
     flex-wrap: wrap;
     justify-content: center;
-
-    
-
 }
 
-#cardTitles{
-    /* border: 1px white dotted; */
+.cardTitles{
+     border: 1px white dotted; 
     margin: 10px 7px;
     border-radius: 10px;
-    height: 190px;
-    width: 150px;
-    background-color: whitesmoke;
+    height: 250px;
+    width: 220px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-color: rgb(26,44,54);  */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     transition: 0.3s;
-  color: black;
+    color: white;
 
 
 }
-#cardTitles:hover{
+.cardTitles:hover{
     transform: scale(1.05);
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background: transparent;
     color: white;
     border: 1px solid white;
 }
 
-#cardTitles:hover h3{
+.cardTitles:hover h3{
     word-wrap: break-word;
     font-size: 1rem;
-    color: white;
+    color: white;  
+}
 
 
-    
-}
-#cardTitles h3{
-    font-size: 1rem;
-}
-#movieTitle{
-    
-}
 
 .imgPoster{
     width: 100%;
     overflow: hidden;
-    height: 100px;
+    height: 70%;
     margin: 5px;
     text-align: center;
     border-radius: 10px;
+    padding-bottom: 20px;
 
     
 }
@@ -211,7 +214,7 @@ em{
 #movieTitle{
 
     left: 20%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'IBM Plex Serif', serif;
     margin: 5px;
     text-align: center;
@@ -235,11 +238,20 @@ em{
     
 }
 #movieDetails{
+    
     padding: 5px;
     margin-bottom: 5px;
     background-color: transparent;
     
     margin: auto;
+}
+.movieDetails{
+    background: transparent;
+    border: none;
+    color: white;
+   text-decoration: underline;
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
 }
 
 

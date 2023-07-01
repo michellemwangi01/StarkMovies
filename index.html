@@ -15,12 +15,13 @@
     <div id="navContainer">
     <nav>
         <div id="logo">
-            <h1>Stark<em>Movies</em></h1>
+            <h1><em>STARK</em>CINEMAX</h1>
         </div>
         <div id="navItems">
             <ul>
-                <li>Home</li>
-                <li>Genres</li>
+                <li><a href="#landingandNav"><li>Home</li></a></li>
+                <li><a href="#movieMenu"><li>Menu</li></a></li>
+                <li><a href="#bodyDiv"><li>Schedule</li></a></li>
                 
             </ul>
         </div>
@@ -29,14 +30,15 @@
     <div id="landingPage">
         <div>
                    <!-- <br id="tagline">"Movie Mania at Your Fingertips." </br> Indulge your passion for movies with ease. Our streaming site puts the power of movie mania in your hands, offering a user-friendly platform to discover, stream, and enjoy your favorite films anytime, anywhere. Get ready to unleash your inner film fanatic!</h1> -->
-                   <h2 id="movieTitle">
+                   <!-- <h2 id="movieTitle">
                         Miss Sloane
-                   </h2>
+                   </h2> -->
  
         </div>
     </div>
   </div>
     <!-- ***************************** Movie Titles ******************************** -->
+    <h1 id="movieMenu">STARKCINEMAX MOVIE MENU</h1>
     <div id="movieTitlesContainer">
         <!-- <div id="cardTitles">
             <div id="imgPoster">
@@ -55,7 +57,7 @@
 
     <!-- ******************************** The Body *************************** -->
 
-    <h1 id="bodyTitle" >view Movie Details or purchase a ticket</h1>
+    <h1 id="bodyTitle" >MOVIE SCHEDULE & DETAILS</h1>
 
      <div id="bodyDiv">   
         <div class="container">
@@ -63,20 +65,23 @@
                 <div class="banner-image"> 
                     <img id="movieImage" src="${film.poster}" alt="moviePoster">
                 </div>
-                <h1 id="movieTitleDetails"> </h1>
-                <p id="movieDescription"></p>
-                <p id="movierunTime"></p>
-                <p id="movieShowTime"></p>
-                <p id="remainingTickets"></p>
+                <h1 class="movieDeets" id="movieTitleDetails"> </h1>
+                <p class="movieDeets" id="movieDescription"></p>
+                <p class="movieDeets" id="movierunTime"></p>
+                <p class="movieDeets" id="movieShowTime"></p>
+                <p class="movieDeets" id="remainingTickets"></p>
             </div>
             <div class="button-wrapper"> 
             <button class="btn fill">BUY NOW</button>
             </div> 
+
+            <img id="imgSlider" src="" alt="">
         </div> 
         
 
 
     </div>
+    
 
     <script src="./script.js"></script>
 </body>
