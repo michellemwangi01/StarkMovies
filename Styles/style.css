@@ -7,28 +7,67 @@ body{
     
 }
 /* ******************NAV CSS****************** */
+#landingandNav{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Images/miss-sloane.jpg");
+    /* #772314 */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+#findMovieBtn{
+    padding: 10px;
+    font-size: 1.2rem;
+    
+}
 #logo h1{
     font-family: 'Cinzel', serif;
     font-size: 3rem;
     color: white;
     /* color: rgb(131, 19, 19); */
 }
-#navContainer{
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), #772314), url("../Images/ironMan.jpg");
-    background-repeat: no-repeat;
-    background-position: 80%;
-    
-}
+
 nav{
     width: 85%;
+    padding: 1rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
     align-items: center;
     background-repeat: no-repeat;
 
+
+}
+#tagline{
+    font-family: 'Dancing Script', cursive;
+    text-transform:lowercase;
+    
+}
+#landingPage{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+
+}
+#landingPage :nth-child(1){
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    width: auto;
+
+}
+#landingPage :nth-child(1) h2{
+    text-transform: uppercase;
+    width: 20rem;
+    font-size: 3rem;
 
 }
 em{
@@ -57,6 +96,74 @@ em{
 #movieSearch{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.1rem;
+}
+/* ******************* BODY CSS ************************ */
+#movieTitlesContainer{
+    display: flex;
+    width: 100%;
+    margin:  0 auto;
+    padding: 2rem 0.2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+
+    
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+
+}
+
+#cardTitles{
+    /* border: 1px white dotted; */
+    margin: 10px 7px;
+    border-radius: 10px;
+    height: 190px;
+    width: 150px;
+    background-color: whitesmoke;
+    transition: 0.3s;
+  color: black;
+
+
+}
+#cardTitles:hover{
+    transform: scale(1.05);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    color: white;
+    border: 1px solid white;
+}
+
+#cardTitles:hover h3{
+    word-wrap: break-word;
+    font-size: 1rem;
+    color: white;
+
+
+    
+}
+#cardTitles h3{
+    font-size: 1rem;
+}
+#movieTitle{
+    
+}
+
+.imgPoster{
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+
+    
+}
+.imgPoster img{
+    object-fit: contain;
+    padding-top: 10px;
+    width: 98%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
 }
 
 /* ******************* BODY CSS ************************ */
@@ -107,6 +214,7 @@ em{
     font-size: 1.5rem;
     font-family: 'IBM Plex Serif', serif;
     margin: 5px;
+    text-align: center;
 
 }
 #imgDiv img{
@@ -121,6 +229,17 @@ em{
     align-items: center;
     justify-content: center;
 
+}
+#detailsBtnDiv{
+    text-align: center;
+    
+}
+#movieDetails{
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    
+    margin: auto;
 }
 
 
