@@ -1,4 +1,4 @@
-  const movieImage =  document.getElementById('movieImage')
+const movieImage =  document.getElementById('movieImage')
   const bannerImage = document.getElementById('banner-imageID')
   const movieTitleDetails = document.getElementById('movieTitleDetails')
   const movieDescription = document.getElementById('movieDescription')
@@ -81,7 +81,7 @@
           </div> -->
     </div>`
 
-
+      const remainingTicketsNum = film.capacity - film.tickets_sold
       let movieDetailsCard = document.getElementById(`cardTitles-${film.id}`)
       movieDetailsCard.addEventListener('click', ()=>{
         console.log(film.title);
@@ -103,21 +103,69 @@
           //display other movie details
           movieDescription.textContent = film.description;
           movierunTime.textContent = `RunTime: ${film.runtime} minutes`;
-          movieShowTime.textContent = `Showtime: ${film.showtime}`;
-          const remainingTicketsNum = film.capacity - film.tickets_sold
+          movieShowTime.textContent = `Showtime: ${film.showtime}`;      
           remainingTickets.textContent = `Remaining Tickets: ${remainingTicketsNum}`;
-    })
-    
+          
+          //add buyBTN eventListener
+          buyNowBtn.addEventListener('click',()=>{
+            buyTicketButton(film)
+            
+          })
+         
 
-      buyNowBtn.addEventListener('click',()=>{
-        if(remainingTicketsNum == 0){
-          buyNowBtn.textContent('Sold out')
-          buyNowBtn.style.backgroundColor = 'red'
-        alert("Sorry, this viewing is fully booked!")
-        }
       })
+  }
+
+function buyTicketButton(film){
+  if(film.tickets_sold >= film.capacity){
+    buyNowBtn.textContent ='Sold out'
+    buyNowBtn.style.backgroundColor = 'red'
+    buyNowBtn.style.opacity = 0.5
+    const soldOut = document.createElement('p')
+    soldOut.setAttribute("id", "soldOut")
+    soldOut.innerText = "SOLD OUT"
+    soldOut.style.color = 'red'
+    soldOut.style.fontWeight = 'bold'
+    movieDeetsContainer.append(soldOut)
+    //alert("Sorry! There are no more tickets for this movie")
+    }
+  else if (film.tickets_sold < film.capacity){
+    patchTicketsSold(film)
+  }
+
+}
 
 
+
+
+  function patchTicketsSold(film){
+    console.log(film);
+    if(film.tickets_sold < film.capacity){
+      newTicketsSold = film.tickets_sold+1
+    }
+    else if (film.tickets_sold >= film.capacity){
+      newTicketsSold = film.tickets_sold
+    }
+    fetch(`http://localhost:3000/films/${film.id}`,{
+          method: 'PATCH',
+          headers:{
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            "tickets_sold": newTicketsSold
+          })
+        })
+        .then(res => { console.log(res);
+          if(res.ok){
+            console.log("SUCCESS")
+          }else{
+            console.log("UNSUCESSFULL")
+          }
+          return res.json()
+        })
+        .then((data)=> console.log(data)
+        //alert("You have successfully purchases a ticket!")
+        )
   }
 
   function createIframe() {
@@ -153,4 +201,3 @@
       }, 300);
 
   }
-
