@@ -6,7 +6,7 @@
       "runtime": "218",
       "capacity": 68,
       "showtime": "07:20PM",
-      "tickets_sold": 36,
+      "tickets_sold": 38,
       "description": "Frozen tells the story of Princess Anna as she teams up with an iceman, his reindeer, and a snowman to find her estranged sister Elsa, whose icy powers have inadvertently trapped their kingdom in eternal winter.",
       "poster": "./Images/frozen.jpg",
       "trailer": "https://www.youtube.com/embed/TbQm5doF_Uc"
@@ -127,7 +127,7 @@
       "runtime": "104",
       "capacity": 30,
       "showtime": "06:00PM",
-      "tickets_sold": 10,
+      "tickets_sold": 11,
       "description": "A group of swingin' teens take time out from having fun in the sun to try to foil a group of crooks searching for a stolen scroll.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/58122/p58122_v_v8_aa.jpg",
       "trailer": ""
@@ -160,7 +160,7 @@
       "runtime": "111",
       "capacity": 50,
       "showtime": "08:00PM",
-      "tickets_sold": 46,
+      "tickets_sold": 47,
       "description": "International man of mystery Diabolik and his lover pull off heist after heist, all while European cops led by Inspector Ginko and envious mobsters led by Ralph Valmont are closing in on them.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/11850/p11850_v_v8_aa.jpg",
       "trailer": ""

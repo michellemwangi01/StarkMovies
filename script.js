@@ -7,15 +7,21 @@ const movieImage =  document.getElementById('movieImage')
   const remainingTickets = document.getElementById('remainingTickets')
   const movieTitlesContainer = document.getElementById('movieTitlesContainer')
   const movieTitlesCard = document.createElement('div')
-  const buyNowBtn = document.getElementById('buyNowBtn')
+  const buyNowBtn = document.createElement('button')
+    buyNowBtn.setAttribute("id", "buyNowBtn")
+    buyNowBtn.classList.add('fill')
+    buyNowBtn.classList.add('btn')
+    buyNowBtn.textContent = 'Buy Ticket'
+  //const buyNowBtn = document.getElementById('buyNowBtn')
+  const buttonwrapper = document.getElementById('button-wrapperID')
   const movieDeetsContainer = document.getElementById('movieDeetsContainer')
   const movieTrailer = createIframe()
 
   document.addEventListener('DOMContentLoaded',()=>{
     fetchFilmData()
     setInterval(imgSlider,3500);
-    buyNowBtn.addEventListener('click',()=>{
-    })
+    // buyNowBtn.addEventListener('click',()=>{
+    // })
   })
 
 
@@ -67,6 +73,7 @@ const movieImage =  document.getElementById('movieImage')
 
   function createMoviePreviewCard(film){
     const moviePreviewCard = document.createElement('div');
+    
     movieTitlesContainer.append(moviePreviewCard)
     moviePreviewCard.innerHTML = `
       <div class="cardTitles" id="cardTitles-${film.id}">
@@ -85,6 +92,7 @@ const movieImage =  document.getElementById('movieImage')
       let movieDetailsCard = document.getElementById(`cardTitles-${film.id}`)
       movieDetailsCard.addEventListener('click', ()=>{
         console.log(film.title);
+        buttonwrapper.append(buyNowBtn)
         movieTitleDetails.textContent = film.title;
         movieDeetsContainer.scrollIntoView({behavior: 'smooth'})//scrollIntoView: used to scroll to a particular section of a page. MovieImage is the section that we would like to scroll TO
 
