@@ -1,31 +1,26 @@
 const movieImage =  document.getElementById('movieImage')
-  const bannerImage = document.getElementById('banner-imageID')
-  const movieTitleDetails = document.getElementById('movieTitleDetails')
-  const movieDescription = document.getElementById('movieDescription')
-  const movierunTime = document.getElementById('movierunTime')
-  const movieShowTime = document.getElementById('movieShowTime')
-  const remainingTickets = document.getElementById('remainingTickets')
-  const movieTitlesContainer = document.getElementById('movieTitlesContainer')
-  const movieTitlesCard = document.createElement('div')
-  const buyNowBtn = document.createElement('button')
+const bannerImage = document.getElementById('banner-imageID')
+const movieTitleDetails = document.getElementById('movieTitleDetails')
+const movieDescription = document.getElementById('movieDescription')
+const movierunTime = document.getElementById('movierunTime')
+const movieShowTime = document.getElementById('movieShowTime')
+const remainingTickets = document.getElementById('remainingTickets')
+const movieTitlesContainer = document.getElementById('movieTitlesContainer')
+const movieTitlesCard = document.createElement('div')
+const buyNowBtn = document.createElement('button')
     buyNowBtn.setAttribute("id", "buyNowBtn")
     buyNowBtn.classList.add('fill')
     buyNowBtn.classList.add('btn')
     buyNowBtn.textContent = 'Buy Ticket'
-  const soldOut = document.createElement('p')
-    soldOut.setAttribute("id", "soldOut")
-    soldOut.innerText = "SOLD OUT"
-    soldOut.style.color = 'red'
-    soldOut.style.fontWeight = 'bold'
-  //const buyNowBtn = document.getElementById('buyNowBtn')
-  const buttonwrapper = document.getElementById('button-wrapperID')
-  const movieDeetsContainer = document.getElementById('movieDeetsContainer')
-  const movieTrailer = createIframe()
+const soldOut = document.getElementById('soldOut')
+const buttonwrapper = document.getElementById('button-wrapperID')
+const movieDeetsContainer = document.getElementById('movieDeetsContainer')
+const movieTrailer = createIframe()
   
 
   document.addEventListener('DOMContentLoaded',()=>{
     fetchFilmData()
-    setInterval(imgSlider,3500);
+    setInterval(imgSlider,3000);
    
   })
 
@@ -55,7 +50,6 @@ const movieImage =  document.getElementById('movieImage')
       
       });
   }
-
 
   function createMovieDetailsCard(film){
     let cardContainer = document.createElement('div')
@@ -129,36 +123,29 @@ const movieImage =  document.getElementById('movieImage')
           buyNowBtn.addEventListener('click',()=>{
             buyTicketButton(film)
           })
-          buyNowBtn.addEventListener('mouseleave',()=>{
-            // buyNowBtn.textContent ='Buy Ticket'
-            // buyNowBtn.style.backgroundColor = 'black'
-            // buyNowBtn.style.opacity = 1
-            // soldOut.remove()
-          })
+         
          
 
       })
   }
 
-function buyTicketButton(film){
-  if(film.tickets_sold >= film.capacity){
-    //alert("Sorry! There are no more tickets for this movie")
-    buyNowBtn.textContent ='Sold out'
-    buyNowBtn.style.backgroundColor = 'red'
-    buyNowBtn.style.opacity = 0.5
-    movieDeetsContainer.append(soldOut)
+  function buyTicketButton(film){
+    if(film.tickets_sold >= film.capacity){
+      //alert("Sorry! There are no more tickets for this movie")
+      soldOut.classList.toggle('soldOutActive')
+      buyNowBtn.textContent = 'SOLD OUT'
+      buyNowBtn.style.backgroundColor = 'red'
+
+      }
+    else if (film.tickets_sold < film.capacity){
+      patchTicketsSold(film)
+      alert(`${film.title} ticket successfully purchased`)
+
     }
-  else if (film.tickets_sold < film.capacity){
-    soldOut.remove()
-    patchTicketsSold(film)
+    //location.reload();
+    //buyNowBtn.removeEventListener('click', handleClick);
+
   }
-  //location.reload();
-  //buyNowBtn.removeEventListener('click', handleClick);
-
-}
-
-
-
 
   function patchTicketsSold(film){
     console.log(film);
@@ -186,8 +173,10 @@ function buyTicketButton(film){
           return res.json()
         })
         .then((data)=> console.log(data)
-        //alert("You have successfully purchases a ticket!")
+        
         )
+
+    
   }
 
   function createIframe() {

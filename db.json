@@ -17,7 +17,7 @@
       "runtime": "158",
       "capacity": 50,
       "showtime": "07:50PM",
-      "tickets_sold": 50,
+      "tickets_sold": 20,
       "description": "The film follows the inner workings inside the mind of a young girl named Riley, who adapts to her family's relocation, as five personified emotions administer her thoughts and actions.",
       "poster": "./Images/insideOut.jpg",
       "trailer": "https://www.youtube.com/embed/yRUAzGQ3nSY"
@@ -28,7 +28,7 @@
       "runtime": "194",
       "capacity": 119,
       "showtime": "06:45PM",
-      "tickets_sold": 96,
+      "tickets_sold": 98,
       "description": "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa.",
       "poster": "./Images/blackpanther.jpg",
       "trailer": "https://www.youtube.com/embed/_Z3QKkl1WyM"
@@ -39,7 +39,7 @@
       "runtime": "172",
       "capacity": 50,
       "showtime": "09:30PM",
-      "tickets_sold": 44,
+      "tickets_sold": 26,
       "description": "Its plot follows the eponymous artificially intelligent doll who develops self-awareness and becomes hostile toward anyone who comes between her and her human companion",
       "poster": "./Images/M3gan.jpg",
       "trailer": "https://www.youtube.com/embed/BRb4U99OU80"
@@ -61,7 +61,7 @@
       "runtime": "96",
       "capacity": 50,
       "showtime": "03:30PM",
-      "tickets_sold": 32,
+      "tickets_sold": 33,
       "description": "Tyler Rake, a former Australian Army SASR operator turned black-market operations mercenary, is recruited by his partner and fellow mercenary, Nik Khan to save Ovi Jr. from Dhaka, Bangladesh. Tyler and Khan's team prepare to extract Ovi Jr., with Ovi Sr.'s men set to pay them once Ovi Jr. is recovered.",
       "poster": "./Images/extraction-2.jpg",
       "trailer": "https://www.youtube.com/embed/Y274jZs5s7s"
@@ -83,7 +83,7 @@
       "runtime": "94",
       "capacity": 30,
       "showtime": "07:30PM",
-      "tickets_sold": 23,
+      "tickets_sold": 14,
       "description": "Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes.",
       "poster": "./Images/fastX.jpg",
       "trailer": "https://www.youtube.com/embed/eoOaKN4qCKw"
@@ -94,7 +94,7 @@
       "runtime": "115",
       "capacity": 40,
       "showtime": "08:30PM",
-      "tickets_sold": 28,
+      "tickets_sold": 18,
       "description": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil. After being kidnapped by a powerful terrorist organization, brilliant industrialist Tony Stark narrowly escapes using an iron suit he crafted from scrap metal and spare parts.",
       "poster": "./Images/ironMan.jpg",
       "trailer": "https://www.youtube.com/embed/Ke1Y3P9D0Bc"
@@ -105,7 +105,7 @@
       "runtime": "99",
       "capacity": 40,
       "showtime": "07:30PM",
-      "tickets_sold": 16,
+      "tickets_sold": 17,
       "description": "A saboteur posing as a scientist strives to destroy the world's first space station.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/46755/p46755_v_v8_aa.jpg",
       "trailer": ""
@@ -127,7 +127,7 @@
       "runtime": "104",
       "capacity": 30,
       "showtime": "07:00PM",
-      "tickets_sold": 21,
+      "tickets_sold": 13,
       "description": "A series of murders in Michigan lead an American secret agent to Amsterdam, where he uncovers a plot to imperil the world with a potent new drug.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/93417/p93417_v_v8_aa.jpg",
       "trailer": ""
@@ -138,7 +138,7 @@
       "runtime": "100",
       "capacity": 40,
       "showtime": "09:00PM",
-      "tickets_sold": 24,
+      "tickets_sold": 27,
       "description": "A stock car driver goes undercover as the wheel man for a motorcycle gang.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/45367/p45367_v_v8_aa.jpg",
       "trailer": ""
@@ -149,7 +149,7 @@
       "runtime": "111",
       "capacity": 50,
       "showtime": "08:00PM",
-      "tickets_sold": 47,
+      "tickets_sold": 8,
       "description": "International man of mystery Diabolik and his lover pull off heist after heist, all while European cops led by Inspector Ginko and envious mobsters led by Ralph Valmont are closing in on them.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/11850/p11850_v_v8_aa.jpg",
       "trailer": ""
@@ -160,7 +160,7 @@
       "runtime": "98",
       "capacity": 50,
       "showtime": "04:45PM",
-      "tickets_sold": 36,
+      "tickets_sold": 6,
       "description": "Delinquent teen-agers ingest a substance and grow thirty feet tall, then proceed to take over a small town.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/37991/p37991_v_v8_aa.jpg",
       "trailer": ""

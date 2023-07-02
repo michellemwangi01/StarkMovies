@@ -341,11 +341,18 @@ a{
 #soldOut{
     font-size: 7rem;
     position: absolute;
-    top: 40%;
+    top: 45%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     opacity: 0.7;
     transform: rotate(-45deg);
-
+    color: red;
+    
+}
+.soldOutInActive{
+    display:none;
+}
+.soldOutActive{
+    display:block;
 }
 #mainMoviesContainer{
     display: flex;
