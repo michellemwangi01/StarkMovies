@@ -7,6 +7,10 @@
   const movieTitlesContainer = document.getElementById('movieTitlesContainer')
   const movieTitlesCard = document.createElement('div')
   const buyNowBtn = document.getElementById('buyNowBtn')
+  const movieTrailer = document.getElementById('movieTrailer')
+  const movieDeetsContainer = document.getElementById('movieDeetsContainer')
+
+  console.log(movieTrailer);
 
 
   document.addEventListener('DOMContentLoaded',()=>{
@@ -30,6 +34,7 @@
           let numberOfMovies = movieKeys.length;
           let filmChoiceNum = Math.floor(Math.random() * numberOfMovies);
           let filmChoice = films[movieKeys[filmChoiceNum]];
+          movieTrailer.src = filmChoice.trailer
           movieTitleDetails.textContent = filmChoice.title;
           movieImage.src = filmChoice.poster;
           movieDescription.textContent = filmChoice.description;
@@ -85,14 +90,15 @@ function createMoviePreviewCard(film){
        console.log(film.title);
        let filmID = film.id
        movieTitleDetails.textContent = film.title;
-          movieImage.src = film.poster;
+          //movieImage.src = film.poster;
+          movieTrailer.src = film.trailer
           movieDescription.textContent = film.description;
           movierunTime.textContent = `RunTime: ${film.runtime} minutes`;
           movieShowTime.textContent = `Showtime: ${film.showtime}`;
           let remainingTicketsNum = film.capacity - film.tickets_sold
           remainingTickets.textContent = `Remaining Tickets: ${remainingTicketsNum}`;
     //scrollIntoView: used to scroll to a particular section of a page. MovieImage is the section that we would like to scroll TO
-    movieImage.scrollIntoView({behavior: 'smooth'})
+    movieDeetsContainer.scrollIntoView({behavior: 'smooth'})
 
     buyNowBtn.addEventListener('click',()=>{
      if(remainingTicketsNum == 0){
@@ -103,17 +109,30 @@ function createMoviePreviewCard(film){
 }
 
 
-  var imgSlider = document.getElementById('imgSlider');
-  var slides=['iron-man-3-small.jpg','iron-man-3.jpg', 'ironMan.jpg','M3gan.jpg', 'miss-sloane.jpg'];
+  var img = document.getElementById('imgSlider');
+  var slides=[ 'womanKing.jpg','M3gan.jpg', 'frozen.jpg','insideOut.jpg','miss-sloane.jpg','fastX.jpg','blackpanther.jpg','ironMan.jpg','extraction-2.jpg'];
+  var currentIndex = 0;
 function imgSlider(){
-  
- // var Start=0;
+    img.style.opacity = 0;
 
-  for (let i = 0; i< slides.length; i++){
-    imgSlider.src =  "./Images/" + slides[i];
-    console.log(imgSlider);
+    setTimeout(function() {
+      img.src = "./Images/" + slides[currentIndex];
+      img.style.opacity = 1; // Transition opacity to 1 after image source is updated
+      if(currentIndex<slides.length-1){
+            currentIndex=currentIndex+1;
+        }
+        else{
+            currentIndex=1;
+        }
+      //currentIndex = (currentIndex + 1) % slides.length;
+      console.log(img.src);
+    }, 300);
 
-  }
+
+    // img.src =  "./Images/" + slides[currentIndex];
+    // img.style.opacity = 0;
+    // currentIndex = (currentIndex+1) % slides.length
+    // console.log(img.src);
 
       // if(Start<slides.length){
       //     Start=Start+1;
@@ -124,4 +143,4 @@ function imgSlider(){
       // console.log(imgSlider);
       // imgSlider.src =  "./Images/" + slides[Start - 1];
 }
-// setInterval(imgSlider,5000);
+setInterval(imgSlider,3500);

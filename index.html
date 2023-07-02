@@ -27,14 +27,17 @@
         </div>
     </nav>
     </div>
+    <div id="imgSliderDiv">
+        <img id="imgSlider" src="./Images/extraction-2.jpg" alt="">
+    </div>
     <div id="landingPage">
         <div>
-                   <!-- <br id="tagline">"Movie Mania at Your Fingertips." </br> Indulge your passion for movies with ease. Our streaming site puts the power of movie mania in your hands, offering a user-friendly platform to discover, stream, and enjoy your favorite films anytime, anywhere. Get ready to unleash your inner film fanatic!</h1> -->
-                   <!-- <h2 id="movieTitle">
-                        Miss Sloane
-                   </h2> -->
- 
+            <h1>The Ultimate Entertainment Destination</h1>
+            <h4>Whether you're seeking laughter, thrills, or thought-provoking narratives, <em>StarkCinemax</em>  is the place for diverse range of films that cater to every taste and preference.</h4>
+
         </div>
+        
+        
     </div>
   </div>
     <!-- ***************************** Movie Titles ******************************** -->
@@ -60,10 +63,11 @@
     <h1 id="bodyTitle" >MOVIE SCHEDULE & DETAILS</h1>
 
      <div id="bodyDiv">   
-        <div class="container">
+        <div id="movieDeetsContainer" class="container">
             <div class="wrapper">
                 <div class="banner-image"> 
-                    <img id="movieImage" src="${film.poster}" alt="moviePoster">
+                    <iframe  id="movieTrailer" width="1260" height="715" src="https://www.youtube.com/embed/AMUkfmUu44k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <img id="movieImage" src="${film.poster}" alt="moviePoster"> -->
                 </div>
                 <h1 class="movieDeets" id="movieTitleDetails"> </h1>
                 <p class="movieDeets" id="movieDescription"></p>
@@ -75,7 +79,8 @@
             <button id="buyNowBtn" class="btn fill">BUY NOW</button>
             </div> 
 
-            <img id="imgSlider" src="" alt="">
+                
+            
         </div> 
         
 
