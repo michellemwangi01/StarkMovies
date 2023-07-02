@@ -180,7 +180,7 @@ function buyTicketButton(film){
     const movieTrailer = document.createElement('iframe')
     bannerImage.append(movieTrailer)
     movieTrailer.setAttribute("id","movieTrailer")
-    movieTrailer.setAttribute("width","1260")
+    movieTrailer.setAttribute("width","1160")
     movieTrailer.setAttribute("height","715")
     movieTrailer.setAttribute("src","")
     movieTrailer.setAttribute("title","YouTube video player")
