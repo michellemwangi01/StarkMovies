@@ -6,7 +6,7 @@
       "runtime": "218",
       "capacity": 68,
       "showtime": "07:20PM",
-      "tickets_sold": 47,
+      "tickets_sold": 68,
       "description": "Frozen tells the story of Princess Anna as she teams up with an iceman, his reindeer, and a snowman to find her estranged sister Elsa, whose icy powers have inadvertently trapped their kingdom in eternal winter.",
       "poster": "./Images/frozen.jpg",
       "trailer": "https://www.youtube.com/embed/TbQm5doF_Uc"
@@ -102,14 +102,15 @@
       "trailer": "https://www.youtube.com/embed/Ke1Y3P9D0Bc"
     },
     {
-      "id": "15",
+      "id": "16",
       "title": "Project Moon Base",
       "runtime": "99",
       "capacity": 40,
       "showtime": "07:30PM",
       "tickets_sold": 22,
       "description": "A saboteur posing as a scientist strives to destroy the world's first space station.",
-      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/46755/p46755_v_v8_aa.jpg"
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/46755/p46755_v_v8_aa.jpg",
+      "trailer": ""
     },
     {
       "id": "10",
@@ -119,7 +120,8 @@
       "showtime": "10:00PM",
       "tickets_sold": 44,
       "description": "Giant spiders from another dimension invade Wisconsin.",
-      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/42171/p42171_v_v8_ab.jpg"
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/42171/p42171_v_v8_ab.jpg",
+      "trailer": ""
     },
     {
       "id": "11",
@@ -129,7 +131,8 @@
       "showtime": "06:00PM",
       "tickets_sold": 12,
       "description": "A group of swingin' teens take time out from having fun in the sun to try to foil a group of crooks searching for a stolen scroll.",
-      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/58122/p58122_v_v8_aa.jpg"
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/58122/p58122_v_v8_aa.jpg",
+      "trailer": ""
     },
     {
       "id": "12",
@@ -140,7 +143,7 @@
       "tickets_sold": 20,
       "description": "A series of murders in Michigan lead an American secret agent to Amsterdam, where he uncovers a plot to imperil the world with a potent new drug.",
       "poster": "https://www.gstatic.com/tv/thumb/v22vodart/93417/p93417_v_v8_aa.jpg",
-      "showing_id": "12"
+      "trailer": ""
     },
     {
       "id": "13",
@@ -150,7 +153,8 @@
       "showtime": "09:00PM",
       "tickets_sold": 31,
       "description": "A stock car driver goes undercover as the wheel man for a motorcycle gang.",
-      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/45367/p45367_v_v8_aa.jpg"
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/45367/p45367_v_v8_aa.jpg",
+      "trailer": ""
     },
     {
       "id": "14",
@@ -160,7 +164,8 @@
       "showtime": "08:00PM",
       "tickets_sold": 40,
       "description": "International man of mystery Diabolik and his lover pull off heist after heist, all while European cops led by Inspector Ginko and envious mobsters led by Ralph Valmont are closing in on them.",
-      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/11850/p11850_v_v8_aa.jpg"
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/11850/p11850_v_v8_aa.jpg",
+      "trailer": ""
     },
     {
       "id": "15",
@@ -170,7 +175,8 @@
       "showtime": "04:45PM",
       "tickets_sold": 33,
       "description": "Delinquent teen-agers ingest a substance and grow thirty feet tall, then proceed to take over a small town.",
-      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/37991/p37991_v_v8_aa.jpg"
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/37991/p37991_v_v8_aa.jpg",
+      "trailer": ""
     }
   ]
 }
