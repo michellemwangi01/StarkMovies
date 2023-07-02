@@ -12,16 +12,21 @@ const movieImage =  document.getElementById('movieImage')
     buyNowBtn.classList.add('fill')
     buyNowBtn.classList.add('btn')
     buyNowBtn.textContent = 'Buy Ticket'
+  const soldOut = document.createElement('p')
+    soldOut.setAttribute("id", "soldOut")
+    soldOut.innerText = "SOLD OUT"
+    soldOut.style.color = 'red'
+    soldOut.style.fontWeight = 'bold'
   //const buyNowBtn = document.getElementById('buyNowBtn')
   const buttonwrapper = document.getElementById('button-wrapperID')
   const movieDeetsContainer = document.getElementById('movieDeetsContainer')
   const movieTrailer = createIframe()
+  
 
   document.addEventListener('DOMContentLoaded',()=>{
     fetchFilmData()
     setInterval(imgSlider,3500);
-    // buyNowBtn.addEventListener('click',()=>{
-    // })
+   
   })
 
 
@@ -83,11 +88,17 @@ const movieImage =  document.getElementById('movieImage')
           <div>
               <h3 id="movieTitle">${film.title}</h3>
           </div>
-          <!-- <div id="detailsBtnDiv">
-            <button class="movieDetails" id="movieDetails-${film.id}">View Details</button>
-          </div> -->
+          <button class="deleteBtn" id="filmcard-${film.id}" ><i class="fa fa-trash-o" style="font-size:24px;color:white"></i></button>
+
     </div>`
 
+
+
+      const deleteButton = document.getElementById(`filmcard-${film.id}`)
+
+      deleteButton.addEventListener('click',()=>{
+        deleteFilm(film)
+      })
       const remainingTicketsNum = film.capacity - film.tickets_sold
       let movieDetailsCard = document.getElementById(`cardTitles-${film.id}`)
       movieDetailsCard.addEventListener('click', ()=>{
@@ -117,7 +128,12 @@ const movieImage =  document.getElementById('movieImage')
           //add buyBTN eventListener
           buyNowBtn.addEventListener('click',()=>{
             buyTicketButton(film)
-            
+          })
+          buyNowBtn.addEventListener('mouseleave',()=>{
+            // buyNowBtn.textContent ='Buy Ticket'
+            // buyNowBtn.style.backgroundColor = 'black'
+            // buyNowBtn.style.opacity = 1
+            // soldOut.remove()
           })
          
 
@@ -126,20 +142,18 @@ const movieImage =  document.getElementById('movieImage')
 
 function buyTicketButton(film){
   if(film.tickets_sold >= film.capacity){
+    //alert("Sorry! There are no more tickets for this movie")
     buyNowBtn.textContent ='Sold out'
     buyNowBtn.style.backgroundColor = 'red'
     buyNowBtn.style.opacity = 0.5
-    const soldOut = document.createElement('p')
-    soldOut.setAttribute("id", "soldOut")
-    soldOut.innerText = "SOLD OUT"
-    soldOut.style.color = 'red'
-    soldOut.style.fontWeight = 'bold'
     movieDeetsContainer.append(soldOut)
-    //alert("Sorry! There are no more tickets for this movie")
     }
   else if (film.tickets_sold < film.capacity){
+    soldOut.remove()
     patchTicketsSold(film)
   }
+  //location.reload();
+  //buyNowBtn.removeEventListener('click', handleClick);
 
 }
 
@@ -189,6 +203,23 @@ function buyTicketButton(film){
     movieTrailer.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share")
     return movieTrailer
     
+  }
+
+  function deleteFilm(film){
+    fetch(`http://localhost:3000/films/${film.id}`, {
+      method: 'DELETE',
+    })
+      .then(response => {
+        if (response.ok) {
+          console.log('Data deleted successfully');
+        } else {
+          throw new Error('Error deleting data');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+      alert(`${film.title} will be deleted`)
   }
 
   var img = document.getElementById('imgSlider');

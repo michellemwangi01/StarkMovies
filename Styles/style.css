@@ -196,6 +196,7 @@ a{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     transition: 0.3s;
     color: white;
+    position: relative;
 
 
 }
@@ -236,9 +237,14 @@ a{
 #movieImage{
     height: 90%;
 }
-/* #banner-imageID{
-    height: 70%;
-}  */
+.deleteBtn{
+    background-color: transparent;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    border: none;
+}
+
 /* ******************* BODY CSS ************************ */
 #bodyTitle{
     font-family: 'Playfair Display', serif;
@@ -257,7 +263,7 @@ a{
     flex: 3;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 14rem auto;
+    margin:  auto;
     width: 90%;
     justify-content: space-around;
     align-items: top;

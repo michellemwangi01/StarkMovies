@@ -1,0 +1,180 @@
+{
+    "films": [
+      {
+        "id": "1",
+        "title": "Frozen",
+        "runtime": "218",
+        "capacity": 68,
+        "showtime": "07:20PM",
+        "tickets_sold": 38,
+        "description": "Frozen tells the story of Princess Anna as she teams up with an iceman, his reindeer, and a snowman to find her estranged sister Elsa, whose icy powers have inadvertently trapped their kingdom in eternal winter.",
+        "poster": "./Images/frozen.jpg",
+        "trailer": "https://www.youtube.com/embed/TbQm5doF_Uc"
+      },
+      {
+        "id": "2",
+        "title": "InsideOut",
+        "runtime": "158",
+        "capacity": 50,
+        "showtime": "07:50PM",
+        "tickets_sold": 50,
+        "description": "The film follows the inner workings inside the mind of a young girl named Riley, who adapts to her family's relocation, as five personified emotions administer her thoughts and actions.",
+        "poster": "./Images/insideOut.jpg",
+        "trailer": "https://www.youtube.com/embed/yRUAzGQ3nSY"
+      },
+      {
+        "id": "3",
+        "title": "The Black Panther",
+        "runtime": "194",
+        "capacity": 119,
+        "showtime": "06:45PM",
+        "tickets_sold": 96,
+        "description": "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa.",
+        "poster": "./Images/blackpanther.jpg",
+        "trailer": "https://www.youtube.com/embed/_Z3QKkl1WyM"
+      },
+      {
+        "id": "4",
+        "title": "M3gan",
+        "runtime": "172",
+        "capacity": 50,
+        "showtime": "09:30PM",
+        "tickets_sold": 44,
+        "description": "Its plot follows the eponymous artificially intelligent doll who develops self-awareness and becomes hostile toward anyone who comes between her and her human companion",
+        "poster": "./Images/M3gan.jpg",
+        "trailer": "https://www.youtube.com/embed/BRb4U99OU80"
+      },
+      {
+        "id": "5",
+        "title": "The Woman King",
+        "runtime": "405",
+        "capacity": 40,
+        "showtime": "09:00PM",
+        "tickets_sold": 29,
+        "description": "The Woman King is an adventure film about the Agojie, the all-female warrior unit that protected the West African kingdom of Dahomey during the 17th to 19th centuries.",
+        "poster": "./Images/womanKing.jpg",
+        "trailer": "https://www.youtube.com/embed/3RDaPV_rJ1Y"
+      },
+      {
+        "id": "6",
+        "title": "Extractor 2",
+        "runtime": "96",
+        "capacity": 50,
+        "showtime": "03:30PM",
+        "tickets_sold": 32,
+        "description": "Tyler Rake, a former Australian Army SASR operator turned black-market operations mercenary, is recruited by his partner and fellow mercenary, Nik Khan to save Ovi Jr. from Dhaka, Bangladesh. Tyler and Khan's team prepare to extract Ovi Jr., with Ovi Sr.'s men set to pay them once Ovi Jr. is recovered.",
+        "poster": "./Images/extraction-2.jpg",
+        "trailer": "https://www.youtube.com/embed/Y274jZs5s7s"
+      },
+      {
+        "id": "7",
+        "title": "Miss Sloane",
+        "runtime": "112",
+        "capacity": 30,
+        "showtime": "10:30PM",
+        "tickets_sold": 30,
+        "description": "In the high-stakes world of political power-brokers, Elizabeth Sloane is the most sought after and formidable lobbyist in D.C. But when taking on the most powerful opponent of her career, she finds winning may come at too high a price.",
+        "poster": "./Images/miss-sloane.jpg",
+        "trailer": "https://www.youtube.com/embed/AMUkfmUu44k"
+      },
+      {
+        "id": "8",
+        "title": "Fast X",
+        "runtime": "94",
+        "capacity": 30,
+        "showtime": "07:30PM",
+        "tickets_sold": 23,
+        "description": "Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes.",
+        "poster": "./Images/fastX.jpg",
+        "trailer": "https://www.youtube.com/embed/eoOaKN4qCKw"
+      },
+      {
+        "id": "9",
+        "title": "Ironman 3",
+        "runtime": "115",
+        "capacity": 40,
+        "showtime": "08:30PM",
+        "tickets_sold": 28,
+        "description": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil. After being kidnapped by a powerful terrorist organization, brilliant industrialist Tony Stark narrowly escapes using an iron suit he crafted from scrap metal and spare parts.",
+        "poster": "./Images/ironMan.jpg",
+        "trailer": "https://www.youtube.com/embed/Ke1Y3P9D0Bc"
+      },
+      {
+        "id": "16",
+        "title": "Project Moon Base",
+        "runtime": "99",
+        "capacity": 40,
+        "showtime": "07:30PM",
+        "tickets_sold": 16,
+        "description": "A saboteur posing as a scientist strives to destroy the world's first space station.",
+        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/46755/p46755_v_v8_aa.jpg",
+        "trailer": ""
+      },
+      {
+        "id": "10",
+        "title": "The Giant Donut Invasion",
+        "runtime": "122",
+        "capacity": 50,
+        "showtime": "10:00PM",
+        "tickets_sold": 22,
+        "description": "Giant spiders from another dimension invade Wisconsin.",
+        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/42171/p42171_v_v8_ab.jpg",
+        "trailer": ""
+      },
+      {
+        "id": "11",
+        "title": "Catalina Caper",
+        "runtime": "104",
+        "capacity": 30,
+        "showtime": "06:00PM",
+        "tickets_sold": 11,
+        "description": "A group of swingin' teens take time out from having fun in the sun to try to foil a group of crooks searching for a stolen scroll.",
+        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/58122/p58122_v_v8_aa.jpg",
+        "trailer": ""
+      },
+      {
+        "id": "12",
+        "title": "Secret Agent Super Puppy",
+        "runtime": "104",
+        "capacity": 30,
+        "showtime": "07:00PM",
+        "tickets_sold": 21,
+        "description": "A series of murders in Michigan lead an American secret agent to Amsterdam, where he uncovers a plot to imperil the world with a potent new drug.",
+        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/93417/p93417_v_v8_aa.jpg",
+        "trailer": ""
+      },
+      {
+        "id": "13",
+        "title": "Wild Rebels",
+        "runtime": "100",
+        "capacity": 40,
+        "showtime": "09:00PM",
+        "tickets_sold": 24,
+        "description": "A stock car driver goes undercover as the wheel man for a motorcycle gang.",
+        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/45367/p45367_v_v8_aa.jpg",
+        "trailer": ""
+      },
+      {
+        "id": "14",
+        "title": "Danger: Diabolik",
+        "runtime": "111",
+        "capacity": 50,
+        "showtime": "08:00PM",
+        "tickets_sold": 47,
+        "description": "International man of mystery Diabolik and his lover pull off heist after heist, all while European cops led by Inspector Ginko and envious mobsters led by Ralph Valmont are closing in on them.",
+        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/11850/p11850_v_v8_aa.jpg",
+        "trailer": ""
+      },
+      {
+        "id": "15",
+        "title": "Village Of The Giants",
+        "runtime": "98",
+        "capacity": 50,
+        "showtime": "04:45PM",
+        "tickets_sold": 36,
+        "description": "Delinquent teen-agers ingest a substance and grow thirty feet tall, then proceed to take over a small town.",
+        "poster": "https://www.gstatic.com/tv/thumb/v22vodart/37991/p37991_v_v8_aa.jpg",
+        "trailer": ""
+      }
+    ]
+  }

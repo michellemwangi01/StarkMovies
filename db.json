@@ -111,17 +111,6 @@
       "trailer": ""
     },
     {
-      "id": "10",
-      "title": "The Giant Donut Invasion",
-      "runtime": "122",
-      "capacity": 50,
-      "showtime": "10:00PM",
-      "tickets_sold": 22,
-      "description": "Giant spiders from another dimension invade Wisconsin.",
-      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/42171/p42171_v_v8_ab.jpg",
-      "trailer": ""
-    },
-    {
       "id": "11",
       "title": "Catalina Caper",
       "runtime": "104",
