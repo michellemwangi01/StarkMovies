@@ -34,8 +34,8 @@ body {
   justify-content:center;
   text-align: center;
   margin: 10px;
-  height: 70rem;
-  width: 80%;
+  height: 50rem;
+  width: 65%;
   
 }
 
@@ -52,7 +52,7 @@ body {
   background-position: center;
   width: 100%;
   object-fit: contain;
-  height: 45rem;
+  height: 33rem;
   border-radius: 12px;
   border: 1px solid rgba(255,255,255, 0.255)
 }
