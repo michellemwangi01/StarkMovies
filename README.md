@@ -4,22 +4,20 @@ An app that allows clients to view movie details and purchase movie tickets.
 
 ## Description
 
-This project is a web application that allows users to vote for their favorite animals. It displays a collection of animal cards, each containing the pet's name, image, vote count, and a button to increase the vote(like) count. Users can click on an animal's name to view additional details about the pet.
+This project is a web application that allows users to purchase movie tickets. It displays a collection of movie cards, each containing the movie's name, image, additional details, and a button to purchase tickets  Users can click on an movie's name to view additional details about the pet.
 
 Main Features:
-1. New pets can be added to the Pet Palace database
-2. Added and existing pets can be viewed on the pets list 
-3. Pets can be voted for by clickin the 'like' icon. Likes are stored on the database
-4. Pets can also be deleted from the database by clicking the delete icon at the bottom of the card
+1. Existing pets can be viewed on the pets list 
+3. Movies can be purchased by clicking the 'buy' icon. Tickets purchased are stored on the database
+4. Movies can also be deleted from the database by clicking the delete icon at the bottom of the card
 
 
-The application utilizes JavaScript and interacts with a RESTful API to retrieve and update data. It makes use of the Fetch API to perform HTTP requests to the backend server. The server stores the animal data and provides endpoints for fetching all animals, updating vote counts, and resetting vote counts.
+The application utilizes JavaScript and interacts with a RESTful API to retrieve and update data. It makes use of the Fetch API to perform HTTP requests to the backend server. The server stores the movie data and provides endpoints for fetching all movies, updating tickets purchased.
 
-The frontend code is built with `HTML`, `CSS`, and `JavaScript`. It uses `DOM manipulation` to dynamically render the animal cards and handle user interactions such as voting and resetting vote counts. Event listeners are attached to the vote and reset buttons to perform the corresponding actions.
+The frontend code is built with `HTML`, `CSS`, and `JavaScript`. It uses `DOM manipulation` to dynamically render the animal cards and handle user interactions such as viewing movie trailers, purchasing tickets. Event listeners are attached to the purchase buttons and card click to perform the corresponding actions.
 
-The code also includes a `form submission` functionality. The form captures user input from various input fields and creates an object representing the form data. This object is then sent to the server using a POST request.
 
-Overall, this project provides an interactive and engaging user experience for voting on favorite animals. It demonstrates the use of frontend technologies, API integration, and data manipulation in a web application context.
+Overall, this project provides an interactive and engaging user experience for viewing movie details. 
 
 ## Project Setup
 To set up the project, follow these steps:
