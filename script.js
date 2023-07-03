@@ -26,7 +26,7 @@ const movieTrailer = createIframe()
 
 
   function fetchFilmData() {
-    fetch("http://localhost:3000/films")
+    fetch("https://raw.githubusercontent.com/michellemwangi01/WK3CodeChallenge-StarkMovies/main/db.json")
       .then((res) => res.json())
       .then((films) => {
         films.forEach(createMoviePreviewCard) //create preview Card for each movie
