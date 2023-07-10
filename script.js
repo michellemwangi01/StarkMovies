@@ -1,3 +1,7 @@
+const onlineLink = "https://mirioarts-shop.netlify.app"
+const localdb = `http://localhost:3000/films/`
+const renderdb = `https://db-starkmovies.onrender.com/films/`
+
 const movieImage =  document.getElementById('movieImage')
 const bannerImage = document.getElementById('banner-imageID')
 const movieTitleDetails = document.getElementById('movieTitleDetails')
@@ -26,7 +30,7 @@ const movieTrailer = createIframe()
 
 
   function fetchFilmData() {
-    fetch("http://localhost:3000/films")
+    fetch(renderdb)
       .then((res) => res.json())
       .then((films) => {
         films.forEach(createMoviePreviewCard) //create preview Card for each movie
@@ -139,11 +143,9 @@ const movieTrailer = createIframe()
       }
     else if (film.tickets_sold < film.capacity){
       patchTicketsSold(film)
-      alert(`${film.title} ticket successfully purchased`)
+      
 
     }
-    //location.reload();
-    //buyNowBtn.removeEventListener('click', handleClick);
 
   }
 
@@ -151,11 +153,12 @@ const movieTrailer = createIframe()
     console.log(film);
     if(film.tickets_sold < film.capacity){
       newTicketsSold = film.tickets_sold+1
+      alert(`${film.title} ticket successfully purchased`)
     }
     else if (film.tickets_sold >= film.capacity){
       newTicketsSold = film.tickets_sold
     }
-    fetch(`http://localhost:3000/films/${film.id}`,{
+    fetch(`${renderdb}${film.id}`,{
           method: 'PATCH',
           headers:{
             'Content-Type': 'application/json'
@@ -175,6 +178,7 @@ const movieTrailer = createIframe()
         .then((data)=> console.log(data)
         
         )
+       
 
     
   }
@@ -195,7 +199,7 @@ const movieTrailer = createIframe()
   }
 
   function deleteFilm(film){
-    fetch(`http://localhost:3000/films/${film.id}`, {
+    fetch(`${renderdb}${film.id}`, {
       method: 'DELETE',
     })
       .then(response => {

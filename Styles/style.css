@@ -341,7 +341,7 @@ a{
 #soldOut{
     font-size: 7rem;
     position: absolute;
-    top: 45%;
+    top: 35%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     opacity: 0.7;
     transform: rotate(-45deg);
